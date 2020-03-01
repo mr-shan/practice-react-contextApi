@@ -2,7 +2,6 @@ import React, { useContext } from "react";
 
 import AppContext from "./../../context/appContext";
 import ShoppingItem from "./../shopping-item/ShoppingItem";
-import styles from "./ShoppingCart.module.css";
 
 export default props => {
   const context = useContext(AppContext);
