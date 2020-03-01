@@ -3,11 +3,13 @@ import React from "react";
 import styles from "./ShoppingItem.module.css";
 
 export default props => {
+  const buttonText = props.count ? `Qty: ${props.count}` : props.buttonText;
   return (
-    <div className={styles.shoppingItemContainer} onClick={props.clicked}>
-      <label style={{width: "70%"}}>{props.name}</label>
-      <label style={{width: "15%"}}>{props.price}</label>
-      {props.count ? <label  style={{width: "15%"}}>x {props.count}</label> : null}
+    <div className={styles.shoppingItemContainer}>
+      <label>
+        {props.name} - ₹ {props.price}
+      </label>
+      <button onClick={props.clicked}>{buttonText}</button>
     </div>
   );
 };

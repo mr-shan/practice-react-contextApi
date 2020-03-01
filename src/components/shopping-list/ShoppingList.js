@@ -10,6 +10,7 @@ export default props => {
       {context.shoppingList.map(item => (
         <ShoppingItem
           key={item.id}
+          buttonText="Add to cart"
           {...item}
           clicked={() => context.addToCart(item)}
         />

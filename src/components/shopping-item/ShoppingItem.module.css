@@ -7,14 +7,23 @@
     text-align: start;
     margin: auto;
     margin-top: 0.5rem;
-    cursor: pointer;
-    transition: all 0.1s;
-}
-
-.shoppingItemContainer:hover {
-    background: rgba(0, 0, 0, 0.15);
+    align-items: center;
 }
 
 .shoppingItemContainer label {
     color: black;
+}
+
+.shoppingItemContainer button {
+    padding: 0.4rem 0.8rem;
+    background: royalblue;
+    color: white;
+    transition: all 0.1s;
+    cursor: pointer;
+    outline: none;
+    border: none;
+}
+
+.shoppingItemContainer button:hover {
+    background: rgba(65, 105, 225, 0.8);
 }
