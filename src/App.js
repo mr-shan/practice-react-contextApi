@@ -8,23 +8,21 @@ import ShoppingList from "./components/shopping-list/ShoppingList";
 import ShoppingCart from "./components/shopping-cart/ShoppingCart";
 import "./App.css";
 
-class App extends React.Component {
-  render() {
-    return (
-      <div className="App">
-        <AppContextProvider>
-          <BrowserRouter>
-            <Navbar />
-            <Switch>
-              <Route exact path="/" component={ShoppingList} />
-              <Route exact path="/shopping-list" component={ShoppingList} />
-              <Route exact path="/shopping-cart" component={ShoppingCart} />
-            </Switch>
-          </BrowserRouter>
-        </AppContextProvider>
-      </div>
-    );
-  }
-}
+const App = () => {
+  return (
+    <div className="App">
+      <AppContextProvider>
+        <BrowserRouter>
+          <Navbar />
+          <Switch>
+            <Route exact path="/" component={ShoppingList} />
+            <Route exact path="/shopping-list" component={ShoppingList} />
+            <Route exact path="/shopping-cart" component={ShoppingCart} />
+          </Switch>
+        </BrowserRouter>
+      </AppContextProvider>
+    </div>
+  );
+};
 
 export default App;
