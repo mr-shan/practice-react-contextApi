@@ -1,7 +1,7 @@
 import React from "react";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 
-import AppContextProvider from "./context/ContextProvider";
+import AppContextProvider from "./context/ContextProvider2";
 
 import Navbar from "./components/nav/Navbar";
 import ShoppingList from "./components/shopping-list/ShoppingList";

@@ -18,12 +18,12 @@
     padding: 0.4rem 0.8rem;
     background: royalblue;
     color: white;
-    transition: all 0.1s;
+    transition: all 0.2s;
     cursor: pointer;
     outline: none;
     border: none;
 }
 
 .shoppingItemContainer button:hover {
-    background: rgba(65, 105, 225, 0.8);
+    background: rgba(65, 105, 225, 0.9);
 }
